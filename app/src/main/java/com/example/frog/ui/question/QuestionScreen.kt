@@ -148,18 +148,6 @@ fun QuestionScreenComponent(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.Center
-        ) {
-            LinearProgressIndicator(
-                modifier = Modifier.size(width = 300.dp, height = 20.dp),
-                progress = { progress },
-                color = Color(30, 53, 47),
-                trackColor = Color(193, 212, 183)
-            )
-        }
-
         HorizontalPager(
             state = pagerState,
             modifier = Modifier.padding(horizontal = 0.dp, vertical = 20.dp)
